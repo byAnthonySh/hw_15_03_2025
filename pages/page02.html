@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание на 15.03.2025 - Страница 2</title>
+    <link rel="shortcut icon" href="/images/icon/smile.png" type="image/x-icon">
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="p-1 bg-primary bg-gradient text-center">
+        <h2>Задание на 15.03.2025</h2>
+        <h5>Страница 2</h5>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-gradient bg-dark sticky-top shadow">
+        <div class="container fw-bold justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item me-2">
+                    <a class="nav-link"
+                        href="/index.html">Главная страница</a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link"
+                        href="/pages/page01.html">Страница 1</a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link active"
+                        href="/pages/page02.html">Страница 2</a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link"
+                        href="/pages/page03.html">Страница 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <h5>Задание на верстку</h5>
+                <a href="#form3btn" class="btn btn-primary fw-bold" data-bs-toggle="collapse">Открыть задание</a>
+                <div id="form3btn" class="collapse my-2">
+                    <p class="border rounded p-2">
+                        <b>Вторая страница</b>: верстка формы ввода сведений о пациенте: фамилия, имя, отчество, дата
+                        рождения, пол (две радиокнопки), симптомы (оформите в виде списка с множественным выбором):
+                        головная боль, повышенное давление, затрудненное дыхание, боли в шее, опции (оформите в виде
+                        чекбоксов или переключателей): требуется представитель (помощник), требуется кресло для
+                        транспортировки, требуется медицинское сопровождение, требуется приоритетное обслуживание. Форму
+                        реализуйте в модальном окне. В сворачивающемся блоке на странице разместите этот пункт.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h5>Форма в модальном окне по заданию</h5>
+                <button type="button" class="btn btn-primary fw-bold" data-bs-toggle="modal"
+                    data-bs-target="#modalform3">Открыть форму</button>
+            </div>
+            <div class="modal fade" id="modalform3">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Форма ввода сведений о пациенте</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="form3" action="#" method="get" enctype="text/plain">
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="surname" name="surname" placeholder="">
+                                    <label for="surname" class="form-label">Фамилия:</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="">
+                                    <label for="name" class="form-label">Имя:</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="patronymic" name="patronymic"
+                                        placeholder="">
+                                    <label for="patronymic" class="form-label">Отчество:</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="date" class="form-control" id="dateofbirth" name="dateofbirth"
+                                        placeholder="">
+                                    <label for="dateofbirth" class="form-label">Дата рождения:</label>
+                                </div>
+                                <div class="border rounded p-2 mb-2">
+                                    <label class="form-label">Выберите пол:</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gender" id="male"
+                                            value="male">
+                                        <label class="form-check-label" for="male">Мужской</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gender" id="female"
+                                            value="female">
+                                        <label class="form-check-label" for="female">Женский</label>
+                                    </div>
+                                </div>
+                                <div class="border rounded p-2 mb-2">
+                                    <label for="symptoms" class="form-label">Выберите симптомы:</label>
+                                    <select multiple class="form-select" id="symptoms" name="symptoms">
+                                        <option value="headache">Головная боль</option>
+                                        <option value="highpressure">Повышенное давление</option>
+                                        <option value="difficultybreathing">Затрудненное дыхание</option>
+                                        <option value="neckpain">Боли в шее</option>
+                                    </select>
+                                </div>
+                                <div class="border rounded p-2 mb-2">
+                                    <label class="form-label">Дополнительные требования:</label>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="assistant"
+                                            name="assistant">
+                                        <label class="form-check-label" for="assistant">Требуется представитель
+                                            (помощник)</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="armchair"
+                                            name="armchair">
+                                        <label class="form-check-label" for="armchair">Требуется кресло для
+                                            транспортировки</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="medicalsupport" name="medicalsupport">
+                                        <label class="form-check-label" for="medicalsupport">Требуется медицинское
+                                            сопровождение</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="highpriority"
+                                            name="highpriority">
+                                        <label class="form-check-label" for="highpriority">Требуется приоритетное
+                                            обслуживание</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" form="form3" class="btn btn-primary my-2">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fixed-bottom bg-dark bg-gradient">
+        <div class="border-bottom border-secondary mb-1"></div>
+        <h6 class="text-center">Шумилин Антон, SWT-421, г. Донецк, 2025 г. <a
+                href="mailto:by.anthony.sh@yandex.ru">by.anthony.sh@yandex.ru</a></h6>
+    </footer>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

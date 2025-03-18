@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание на 15.03.2025 - Главная страница</title>
+    <link rel="shortcut icon" href="/images/icon/smile.png" type="image/x-icon">
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="p-1 bg-primary bg-gradient text-center">
+        <h2>Задание на 15.03.2025</h2>
+        <h5>Главная страница</h5>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-gradient bg-dark sticky-top shadow">
+        <div class="container fw-bold justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item me-2">
+                    <a class="nav-link active"
+                        href="/index.html">Главная страница</a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link"
+                        href="/pages/page01.html">Страница 1</a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link"
+                        href="/pages/page02.html">Страница 2</a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link"
+                        href="/pages/page03.html">Страница 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-sm">
+                <h5 class="text-center">Размещение задания с помощью accordion</h5>
+                <div id="accordion">
+                    <div class="card mb-1">
+                        <div class="card-header bg-gradient">
+                            <a class="collapsed btn fw-bold" data-bs-toggle="collapse" href="#theory">
+                                Теоретическая часть
+                            </a>
+                        </div>
+                        <div id="theory" class="collapse show" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>Класс <b>toast</b> для построения всплывающих сообщений</li>
+                                    <li>Классы <b>offcanvas</b> для формирования анимированных «шторок» по сторонам
+                                        экрана</li>
+                                    <li>Классы <b>navs</b> для вкладок на странице</li>
+                                    <li>Классы <b>navbar</b> для панели навигации</li>
+                                    <li>Построение адаптивной навигационной панели</li>
+                                    <li>Выпадающие меню в навигационной панели</li>
+                                    <li>Формы в навигационной панели</li>
+                                    <li>Позиционирование навигационной панели</li>
+                                    <li>«Липкая» навигационная панель</li>
+                                    <li>Отслеживание позиции в контексте элементами навигационного меню</li>
+                                    <li>Базовый шаблон страницы с использованием <b><a
+                                                href="https://getbootstrap.ru">Bootstrap</a></b></li>
+                                    <li>Создание ветвей в локальном репозитории git</li>
+                                    <li>Переходы по ветвям репозитория</li>
+                                    <li>Слияние ветвей репозитория</li>
+                                    <li>Удаление ветвей репозитория</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-1">
+                        <div class="card-header bg-gradient">
+                            <a class="collapsed btn fw-bold" data-bs-toggle="collapse" href="#practice">
+                                Практическая часть
+                            </a>
+                        </div>
+                        <div id="practice" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    Разработайте набор страниц <b>HTML</b>, используйте только стили <b>Bootstrap</b>.
+                                    На главной странице сверстайте это задание на разработку, соблюдать типы шрифтов и
+                                    их размеры не надо. Используйте рассмотренные на занятии возможности
+                                    <b>Bootstrap</b>, навигационное меню постройте на базе изученных навигационных
+                                    панелей.
+                                </p>
+                                <p>
+                                    Набор страниц для разработки (размещать в блоке контента):
+                                </p>
+                                <ul>
+                                    <li><b>Главная страница</b>: Пункты задания (теоретическая часть, практическая
+                                        часть, дополнение) разместите в блоках аккордеона <b>Bootstrap</b></li>
+                                    <li><b>Первая страница</b>: Используя переключаемые вкладки <b>(nav-tabs)</b>
+                                        разместите разметку для работы с книгами в библиотеке
+                                        <ul>
+                                            <li><b>Первая вкладка</b>. Пять карточек со сведениями о книгах в
+                                                библиотеке. На карточке отображать: код ББК, фамилия и инициалы автора,
+                                                название, жанр, инвентарный номер, фото обложки, количество в
+                                                библиотеке, количество в наличии, кнопки для выдачи и возврата книги
+                                            </li>
+                                            <li><b>Вторая вкладка</b>. Форма выдачи книги с полями: инвентарный номер
+                                                книги в виде текста (не требуется менять), номер читательского билета,
+                                                дата выдачи, количество дней использования, кнопка «Выдать», кнопка
+                                                «Отмена»</li>
+                                            <li><b>Третья вкладка</b>. Форма возврата книги с полями: инвентарный номер
+                                                книги в виде текста (не требуется менять), номер читательского билета,
+                                                дата возврата, флажок «Требуется реставрация книги», кнопка «Вернуть»,
+                                                кнопка «Отмена».</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Вторая страница</b>: верстка формы ввода сведений о пациенте: фамилия, имя,
+                                        отчество, дата рождения, пол (две радиокнопки), симптомы (оформите в виде списка
+                                        с множественным выбором): головная боль, повышенное давление, затрудненное
+                                        дыхание, боли в шее, опции (оформите в виде чекбоксов или переключателей):
+                                        требуется представитель (помощник), требуется кресло для транспортировки,
+                                        требуется медицинское сопровождение, требуется приоритетное обслуживание. Форму
+                                        реализуйте в модальном окне. В сворачивающемся блоке на странице разместите этот
+                                        пункт.</li>
+                                    <li><b>Третья страница</b>: верстка формы ввода сведений об экскурсии: название,
+                                        дата и время начала, место назначения (оформите выпадающим списком, гора
+                                        Ай-Петри, Мраморная пещера, гора Демерджи, Солнечная долина, Розовые озера,
+                                        бухты Севастополя, грязевые вулканы, Евпатория, звездопад воспоминаний,
+                                        заповедник Карадаг), дополнительные требования (оформите как набор чек-боксов
+                                        или переключателей): удобная обувь, теплая одежда, питьевая вода, купальные
+                                        принадлежности. Форму реализуйте в модальном окне. В сворачивающемся блоке на
+                                        странице разместите этот пункт.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header bg-gradient">
+                            <a class="collapsed btn fw-bold" data-bs-toggle="collapse" href="#additionally">
+                                Дополнительно
+                            </a>
+                        </div>
+                        <div id="additionally" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    Запись занятия можно скачать <b><a
+                                            href="https://cloud.mail.ru/public/Lfcw/eRCz4hVaM">по этой ссылке</a></b>
+                                    (HTML_CSS) и <b><a href="https://cloud.mail.ru/public/bvcB/wNhLSxKiv">по этой
+                                            ссылке</a></b> (git). Материалы занятия в этом же архиве.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fixed-bottom bg-dark bg-gradient">
+        <div class="border-bottom border-secondary mb-1"></div>
+        <h6 class="text-center">Шумилин Антон, SWT-421, г. Донецк, 2025 г. <a
+            href="mailto:by.anthony.sh@yandex.ru">by.anthony.sh@yandex.ru</a></h6>
+    </footer>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

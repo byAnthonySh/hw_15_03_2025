@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание на 15.03.2025 - Страница 3</title>
+    <link rel="shortcut icon" href="/images/icon/smile.png" type="image/x-icon">
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="p-1 bg-primary bg-gradient text-center">
+        <h2>Задание на 15.03.2025</h2>
+        <h5>Страница 3</h5>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-gradient bg-dark sticky-top shadow">
+        <div class="container fw-bold justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item me-2">
+                    <a class="nav-link"
+                        href="/index.html">Главная страница</a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link"
+                        href="/pages/page01.html">Страница 1</a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link"
+                        href="/pages/page02.html">Страница 2</a>
+                </li>
+                <li class="nav-item me-2">
+                    <a class="nav-link active"
+                        href="/pages/page03.html">Страница 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <h5>Задание на верстку</h5>
+                <a href="#form4btn" class="btn btn-primary fw-bold" data-bs-toggle="collapse">Открыть задание</a>
+                <div id="form4btn" class="collapse my-2">
+                    <p class="border rounded p-2">
+                        <b>Третья страница</b>: верстка формы ввода сведений об экскурсии: название, дата и время
+                        начала, место назначения (оформите выпадающим списком, гора Ай-Петри, Мраморная пещера, гора
+                        Демерджи, Солнечная долина, Розовые озера, бухты Севастополя, грязевые вулканы, Евпатория,
+                        звездопад воспоминаний, заповедник Карадаг), дополнительные требования (оформите как набор
+                        чек-боксов или переключателей): удобная обувь, теплая одежда, питьевая вода, купальные
+                        принадлежности. Форму реализуйте в модальном окне. В сворачивающемся блоке на странице
+                        разместите этот пункт.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h5>Форма в модальном окне по заданию</h5>
+                <button type="button" class="btn btn-primary fw-bold" data-bs-toggle="modal"
+                    data-bs-target="#modalform4">Открыть форму</button>
+            </div>
+            <div class="modal fade" id="modalform4">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Форма ввода сведений об экскурсии</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="form4" action="#" method="get" enctype="text/plain">
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="">
+                                    <label for="name">Название экскурсии:</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="datetime-local" class="form-control" id="datetime" name="datetime"
+                                        placeholder="">
+                                    <label for="datetime">Выберите дату и время начала:</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <select class="form-select" id="place" name="place">
+                                        <option value="mountaipetri">Гора Ай-Петри</option>
+                                        <option value="marblecave">Мраморная пещера</option>
+                                        <option value="mountdemerdzhi">Гора Демерджи</option>
+                                        <option value="sunnyvalley">Солнечная долина</option>
+                                        <option value="pinklakes">Розовые озера</option>
+                                        <option value="sevastopolbays">Бухты Севастополя</option>
+                                        <option value="mudvolcanoes">Грязевые вулканы</option>
+                                        <option value="yevpatoria">Евпатория</option>
+                                        <option value="meteorshowerofmemories">Звездопад воспоминаний</option>
+                                        <option value="karadagnaturereserve">Заповедник Карадаг</option>
+                                    </select>
+                                    <label for="place" class="form-label">Выберите место назначения:</label>
+                                </div>
+                                <div class="border rounded p-2 mb-2">
+                                    <label class="form-label">Дополнительные требования:</label>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="comfortableshoes" name="comfortableshoes">
+                                        <label class="form-check-label" for="comfortableshoes">Требуется удобная
+                                            обувь</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="warmclothes"
+                                            name="warmclothes">
+                                        <label class="form-check-label" for="warmclothes">Требуется теплая
+                                            одежда</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="drinkingwater"
+                                            name="drinkingwater">
+                                        <label class="form-check-label" for="drinkingwater">Требуется питьевая
+                                            вода</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="bathingaccessories" name="bathingaccessories">
+                                        <label class="form-check-label" for="bathingaccessories">Требуются купальные
+                                            принадлежности</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" form="form4" class="btn btn-primary my-2">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fixed-bottom bg-dark bg-gradient">
+        <div class="border-bottom border-secondary mb-1"></div>
+        <h6 class="text-center">1111</h6>
+    </footer>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
